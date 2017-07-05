@@ -1,1 +1,32 @@
 @import 'common.less';
+
+.main-container {
+  margin-top: @header-height;
+}
+
+.main-contents > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% / 3);
+}
+
+.main-slide-img {
+  height: 750px;
+  width: 700px;
+  background-size: cover;
+  background-position: 50% 80%;
+}
+
+.btn-slide {
+  height: 50px;
+  width: 50px;
+  background-color: #999999;
+  text-align: center;
+  line-height: 50px;
+}
+
+.btn-slide .fa {
+  display: inline-block;
+  font-size: 30px;
+  color: #ffffff;
+}

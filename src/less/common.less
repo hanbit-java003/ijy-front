@@ -4,8 +4,59 @@ body {
   color: @font-color;
 }
 
+@header-height:135px;
+
+header {
+  position: fixed;
+  height: @header-height;
+  width: 100%;
+  min-width: 850px;
+  top: 0px;
+  left: 0px;
+  background-color: #ffffff;
+  border-bottom: solid 1px #ddd;
+}
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.header-menu-logo {
+  display: inline-block;
+  padding-top: 40px;
+  padding-left: 60px;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0px;
+  height: @header-height;
+  right: 50px;
+}
+
+.header-menu > li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 20px;
+  line-height: @header-height;
+  cursor: pointer;
+  color: #999;
+}
+
+.header-menu > li:hover {
+  color: #000;
+}
+
+footer {
+  padding-top: 40px;
+  background-color: #333;
+}
+
+.footer-copy-text {
+  font-size: 12px;
+  text-align: center;
+  padding: 20px 0px;
+  color: #aaaaaa;
 }
