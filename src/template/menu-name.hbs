@@ -1,0 +1,12 @@
+<li>
+    <div class="header-menu-text">
+        {{name}}
+    </div>
+    {{#if sub}}
+    <ul class="header-sub-menu">
+        {{#each subMenu}}
+            <li>{{name}}</li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</li>

@@ -1,11 +1,42 @@
 require('bootstrap');
 require('../less/main.less');
-var hello = require('./sample/hello');
+require('./common');
 
-$('.say-hello').on('click', function() {
-    alert(hello.hello($('#txt-hello').val()));
-});
+var contents = require('./main/main-contents.js');
+var templete = require('../template/main-contents.hbs');
 
-$('.goto-sub').on('click', function() {
-    location.href = 'sub.html';
+function initSlider() {
+    for (var i=0; i<contents.length; i++) {
+        var html = templete(contents[i]);
+
+        $('.main-contents').append(html);
+    }
+
+    $('.main-contents > li:first-child').addClass('active');
+}
+
+initSlider();
+
+$('.btn-slide').on('click', function () {
+    var count = $('.main-contents > li').length;
+    var index = $('.main-contents > li.active').index();
+    var nextIndex = index;
+
+    if ($(this).hasClass('btn-slide-left')) {
+        nextIndex = index - 1;
+
+        if (nextIndex < 0) {
+            nextIndex = count - 1;
+        }
+    }
+    else if ($(this).hasClass('btn-slide-right')) {
+        nextIndex = index + 1;
+
+        if (nextIndex >= count) {
+            nextIndex = 0;
+        }
+    }
+
+    $('.main-contents > li').removeClass('active');
+    $($('.main-contents > li')[nextIndex]).addClass('active');
 });

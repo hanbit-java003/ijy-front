@@ -1,0 +1,46 @@
+@import 'common.less';
+
+.greetings {
+  position: relative;
+  margin: @header-height auto 100px auto;
+  width: 1100px;
+}
+
+.greeting-main {
+  padding-top: 60px;
+}
+
+.greeting-contents {
+  position: relative;
+  vertical-align: top;
+}
+
+@greeting-img-width: 300px;
+@greeting-img-top: 20px;
+
+.greeting-introduce {
+  padding-top: @greeting-img-top;
+  height: 500px;
+  width: @greeting-img-width;
+}
+
+.greeting-introduce > li {
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+  margin: 0px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.greeting-introduce > li > img {
+  height: 100%;
+}
+
+.greeting-text {
+  position: absolute;
+  top: @greeting-img-top;
+  left: @greeting-img-width;
+  font-size: 16px;
+  line-height: 25px;
+}

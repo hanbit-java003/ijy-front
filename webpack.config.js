@@ -9,10 +9,13 @@ const port = {
 
 const pages = [{
     html: 'index',
-    script: 'main',
+    script: 'main'
+}, {
+    html: 'greeting',
+    script: 'greeting'
 }, {
     html: 'sub',
-    script: 'sub',
+    script: 'sub'
 }];
 
 module.exports = {
