@@ -1,11 +1,44 @@
-@import 'common.less';
 @import 'main.less';
-@import './contents/contents-introduce';
+@import './contents/contents-introduce.less';
 
 .exhibition-container {
   position: relative;
   margin-top: @header-height;
   height: 750px;
+}
+
+.exhibition-contents {
+  text-align: center;
+}
+
+.exhibition-contents > li {
+  display: none;
+}
+
+.exhibition-contents > li.active {
+  display: block;
+}
+
+.exhibition-contents > li > img {
+  height: 30%;
+}
+
+.exhibition-textbox {
+  text-align: center;
+  padding: 80px 200px;
+}
+
+.exhibition-name {
+  height: 80px;
+  font-size: 30px;
+}
+
+.exhibition-preface {
+  padding-top: 100px;
+}
+
+.exhibition-introduce {
+  margin-top: 30px;
 }
 
 .btn-slide {
@@ -25,4 +58,22 @@
 
 .btn-slide-right {
   right: 300px;
+}
+
+.button-exhibition {
+  margin: 20px auto;
+  height: 50px;
+  width: 150px;
+  background-color: #424242;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.button-exhibition:hover {
+  background-color: #111;
+}
+
+.button-exhibition > li {
+  padding: 15px;
 }

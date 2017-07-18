@@ -1,33 +1,43 @@
 module.exports = [{
     name: 'ABOUT',
     subMenu: [{
-        name: 'Greeting'
+        name: 'Greeting',
+        id: 'greeting'
     }, {
-        name: 'Space'
+        name: 'Space',
+        id: 'space'
     }, {
-        name: 'Location'
+        name: 'Location',
+        id: 'location'
     }],
     sub: true
 }, {
     name: 'EXHIBITION',
     subMenu: [{
-        name: 'Current'
+        name: 'Current',
+        id: 'current'
     }, {
-        name: 'Past'
+        name: 'Past',
+        id: 'past-exhibition'
     }, {
-        name: 'Upcoming'
+        name: 'Upcoming',
+        id: 'upcoming'
     }],
     sub: true
 }, {
-    name: 'ARTISTS'
+    name: 'ARTISTS',
+    id: 'artists'
 }, {
     name: 'NEWS',
     subMenu: [{
-        name: 'Press'
+        name: 'Press',
+        id: 'press'
     }, {
-        name: 'Notice'
+        name: 'Notice',
+        id: 'notice'
     }],
     sub: true
 },{
-    name: 'CONTACT'
+    name: 'CONTACT',
+    id: 'contact'
 }];

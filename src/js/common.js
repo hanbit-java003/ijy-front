@@ -17,7 +17,8 @@ $('.menu-logo').on('click', function () {
 });
 
 $('.header-sub-menu > li').on('click', function () {
-    location.href = './greeting.html';
+    var menuId = $(this).attr('menu-id');
+    location.href = '/' + menuId + '.html';
 });
 
 $('.header-menu > li').on('mouseover', function () {

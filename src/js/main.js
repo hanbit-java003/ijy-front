@@ -3,11 +3,11 @@ require('../less/main.less');
 require('./common');
 
 var contents = require('./main/main-contents.js');
-var templete = require('../template/main-contents.hbs');
+var template = require('../template/main-contents.hbs');
 
 function initSlider() {
     for (var i=0; i<contents.length; i++) {
-        var html = templete(contents[i]);
+        var html = template(contents[i]);
 
         $('.main-contents').append(html);
     }
