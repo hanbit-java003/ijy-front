@@ -2,8 +2,8 @@ require('bootstrap');
 require('../less/main.less');
 require('./common');
 
-var contents = require('./main/main-contents.js');
-var template = require('../template/main-contents.hbs');
+var contents = require('./model/main/main-contents.js');
+var template = require('../template/img-contents.hbs');
 
 function initSlider() {
     for (var i=0; i<contents.length; i++) {

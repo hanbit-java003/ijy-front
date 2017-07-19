@@ -18,15 +18,25 @@ module.exports = [{
         id: 'current'
     }, {
         name: 'Past',
-        id: 'past-exhibition'
+        id: 'past'
     }, {
         name: 'Upcoming',
         id: 'upcoming'
     }],
     sub: true
 }, {
-    name: 'ARTISTS',
-    id: 'artists'
+    name: 'ARTIST',
+    id: 'main-artist'
+}, {
+    name: 'MUSIC',
+    subMenu: [{
+        name: 'Concert',
+        id: 'concert'
+    }, {
+        name: 'Artist',
+        id: 'artist'
+    }],
+    sub: true
 }, {
     name: 'NEWS',
     subMenu: [{
@@ -37,7 +47,7 @@ module.exports = [{
         id: 'notice'
     }],
     sub: true
-},{
+}, {
     name: 'CONTACT',
     id: 'contact'
 }];

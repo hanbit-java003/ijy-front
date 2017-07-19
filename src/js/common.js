@@ -1,4 +1,4 @@
-var menus = require('./main/menu-name.js');
+var menus = require('./model/main/menu-name.js');
 
 function initMenu() {
     var template = require('../template/menu-name.hbs');

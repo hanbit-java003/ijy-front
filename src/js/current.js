@@ -4,8 +4,8 @@ require('../less/common.less');
 
 var common = require('./common.js');
 
-var contents = require('./menus/exhibition');
-var template = require('../template/main-contents.hbs');
+var contents = require('./model/menus/exhibition');
+var template = require('../template/img-contents.hbs');
 
 function initSlider() {
     for (var i=0; i<contents.length; i++) {
