@@ -18,7 +18,7 @@ module.exports = [{
         id: 'current'
     }, {
         name: 'Past',
-        id: 'past'
+        id: 'exhibitions'
     }, {
         name: 'Upcoming',
         id: 'upcoming'

@@ -18,6 +18,7 @@ $('.menu-logo').on('click', function () {
 
 $('.header-sub-menu > li').on('click', function () {
     var menuId = $(this).attr('menu-id');
+    /*location.href = '/exhibitions.html?id=' + menuId;*/
     location.href = '/' + menuId + '.html';
 });
 
