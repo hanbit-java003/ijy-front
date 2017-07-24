@@ -18,7 +18,8 @@ module.exports = [{
         id: 'current'
     }, {
         name: 'Past',
-        id: 'exhibitions'
+        id: 'exhibitions',
+        subId: 'past'
     }, {
         name: 'Upcoming',
         id: 'upcoming'
@@ -31,7 +32,8 @@ module.exports = [{
     name: 'MUSIC',
     subMenu: [{
         name: 'Concert',
-        id: 'concert'
+        id: 'concert',
+        subId: 'concert'
     }, {
         name: 'Artist',
         id: 'artist'

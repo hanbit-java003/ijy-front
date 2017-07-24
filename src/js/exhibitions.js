@@ -2,8 +2,12 @@ require('bootstrap');
 require('./common.js');
 require('../less/exhibitions.less');
 
+var URLSearchParams = require('url-search-params');
+var params = new URLSearchParams(location.search);
+var exhibitionId = params.get('id');
+
 $.ajax({
-   url: 'api/exhibition/past',
+   url: 'api/exhibitions/' + exhibitionId,
     success: function (result) {
         initExhibitions(result)
     }

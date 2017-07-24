@@ -18,8 +18,10 @@ $('.menu-logo').on('click', function () {
 
 $('.header-sub-menu > li').on('click', function () {
     var menuId = $(this).attr('menu-id');
+    var subId = $(this).attr('sub-id');
+
     /*location.href = '/exhibitions.html?id=' + menuId;*/
-    location.href = '/' + menuId + '.html';
+    location.href = '/' + menuId + '.html' + (subId ? '?id=' + subId : '');
 });
 
 $('.header-menu > li').on('mouseover', function () {
