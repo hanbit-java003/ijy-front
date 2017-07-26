@@ -32,7 +32,7 @@ module.exports = [{
     name: 'MUSIC',
     subMenu: [{
         name: 'Concert',
-        id: 'concert',
+        id: 'exhibitions',
         subId: 'concert'
     }, {
         name: 'Artist',

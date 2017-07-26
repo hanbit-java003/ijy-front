@@ -3,11 +3,12 @@ require('./common.js');
 require('../less/exhibitions.less');
 
 var URLSearchParams = require('url-search-params');
+
 var params = new URLSearchParams(location.search);
-var exhibitionId = params.get('id');
+var exId = params.get('id');
 
 $.ajax({
-   url: 'api/exhibitions/' + exhibitionId,
+   url: '/api/exhibitions/' + exId,
     success: function (result) {
         initExhibitions(result)
     }
