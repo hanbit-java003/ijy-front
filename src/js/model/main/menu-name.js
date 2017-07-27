@@ -27,7 +27,8 @@ module.exports = [{
     sub: true
 }, {
     name: 'ARTIST',
-    id: 'main-artist'
+    id: 'artist',
+    subId: 'artist'
 }, {
     name: 'MUSIC',
     subMenu: [{
@@ -36,7 +37,8 @@ module.exports = [{
         subId: 'concert'
     }, {
         name: 'Artist',
-        id: 'artist'
+        id: 'artist',
+        subId: 'music'
     }],
     sub: true
 }, {

@@ -24,6 +24,25 @@ $('.header-sub-menu > li').on('click', function () {
     location.href = '/' + menuId + '.html' + (subId ? '?id=' + subId : '');
 });
 
+/*$('.header-menu-text').on('click', function () {
+   var menuId = $(this).attr('menu-head');
+   location.href = '/' + menuId + '.html';
+});*/
+
+$('.header-menu-text').on('click', function () {
+   var menuId = $(this).parent($('.header-menu')).find($('.header-sub-menu > li:first-child')).attr('menu-id');
+   var subId = $(this).parent($('.header-menu')).find($('.header-sub-menu > li:first-child')).attr('sub-id');
+
+   if (!menuId) {
+       var menuHead = $(this).attr('menu-head');
+       location.href = '/' + menuHead + '.html';
+   }
+
+   else {
+       location.href = '/' + menuId + '.html' + (subId ? '?id=' + subId : '');
+   }
+});
+
 $('.header-menu > li').on('mouseover', function () {
     $(this).find('.header-sub-menu').fadeIn(150);
 });

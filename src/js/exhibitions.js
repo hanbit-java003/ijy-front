@@ -23,3 +23,11 @@ function initExhibitions(subEx) {
         $('.exhibition-templates').append(html);
     }
 }
+
+$('.exhibition-date-tab > li').on('click', function () {
+    var tabIndex = $(this).index();
+
+    var tabBtn = $(this).parent('.exhibition-date-tab').find('li');
+    tabBtn.removeClass('active');
+    $(tabBtn[tabIndex]).addClass('active');
+});
