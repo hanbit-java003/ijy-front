@@ -12,3 +12,10 @@ $('.artist-tab-btn > li').on('click', function () {
     tabImg.removeClass('active');
     $(tabImg[tabIndex]).addClass('active');
 });
+
+$.ajax({
+    url: '/api/artist/'
+});
+
+var artistTemplate = require('../template/artist-list.hbs');
+var artistHtml = artistTemplate();

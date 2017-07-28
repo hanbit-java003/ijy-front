@@ -8,7 +8,7 @@ var params = new URLSearchParams(location.search);
 var exId = params.get('id');
 
 $.ajax({
-   url: '/api/exhibitions/' + exId,
+    url: '/api/exhibitions/' + exId,
     success: function (result) {
         initExhibitions(result)
     }

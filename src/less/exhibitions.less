@@ -1,6 +1,10 @@
 @import 'common.less';
 @import './contents/contents-introduce.less';
 
+body {
+  background-color: #fafbf8;
+}
+
 .past-exhibition-container {
   margin: 225px auto;
   width: 70%;
@@ -10,7 +14,7 @@
   height: 600px;
 }
 
-.exhibition-box ul {
+.exhibition-box > ul {
   display: inline-block;
   vertical-align: top;
 }
@@ -19,7 +23,7 @@
   border-top: solid 1px #aaa;
   border-bottom: solid 1px #aaa;
   margin-right: 50px;
-  width: 200px;
+  width: 100px;
 }
 
 .exhibition-date-tab > li {
@@ -34,26 +38,33 @@
 }
 
 .exhibition-templates {
-  width: 800px;
+  width: 900px;
 }
 
-.past-img {
-  height: 300px;
-  background-size: cover;
+.exhibition-img > img {
+  min-width: 85%;
+  height: auto;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.07);
 }
 
 .exhibition-templates > li {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 100px;
+}
+
+.exhibition-templates > li:nth-child(3) {
+  margin-right: 0;
 }
 
 .exhibition-text {
+  margin-top: 20px;
   padding: 15px;
   text-align: center;
-  width: 220px;
+  width: 230px;
 }
 
 .exhibition-title {
+  vertical-align: top;
   font-weight: bold;
 }
 

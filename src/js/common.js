@@ -37,7 +37,6 @@ $('.header-menu-text').on('click', function () {
        var menuHead = $(this).attr('menu-head');
        location.href = '/' + menuHead + '.html';
    }
-
    else {
        location.href = '/' + menuId + '.html' + (subId ? '?id=' + subId : '');
    }
