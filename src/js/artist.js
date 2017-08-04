@@ -4,7 +4,7 @@ require('./common');
 var URLSearchParams = require('url-search-params');
 
 var params = new URLSearchParams(location.search);
-var musicId = params.get('id');
+var musicId = params.get('id') || 'artist';
 
 function addTabEvent() {
     $('.artist-tab-btn > li').on('click', function () {
@@ -19,20 +19,6 @@ function addTabEvent() {
         $(tabImg[tabIndex]).addClass('active');
     });
 }
-
-$.ajax({
-    url: '/api/artist',
-    success: function (result) {
-        initArtist(result)
-    }
-});
-
-$.ajax({
-    url: '/api/' + musicId,
-    success: function (resultt) {
-        initMusic(resultt)
-    }
-});
 
 var templateName = require('../template/artist-list-name.hbs');
 var templateImg = require('../template/artist-list-img.hbs');
@@ -53,17 +39,10 @@ function initArtist(artistList) {
     addTabEvent();
 }
 
-
-function initMusic(musicList) {
-
-    for (var i=0; i<musicList.length; i++) {
-        var htmlName = templateName(musicList[i]);
-        $('.artist-tab-btn').append(htmlName);
-
-        var htmlSummary = templateImg(musicList[i]);
-        $('.artist-tab-img').append(htmlSummary);
+$.ajax({
+    url: '/api/' + musicId,
+    success: function (result) {
+        initArtist(result)
     }
+});
 
-    $('.artist-tab-btn > li:first-child').addClass('active');
-    $('.artist-tab-img > li:first-child').addClass('active');
-}
