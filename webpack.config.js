@@ -4,7 +4,7 @@ const utils = require('./webpack.config.utils');
 
 const port = {
     web: 89,
-    was: 8080
+    was: 8081
 };
 
 const pages = [{
@@ -13,6 +13,33 @@ const pages = [{
 }, {
     html: 'greeting',
     script: 'greeting'
+}, {
+    html: 'current',
+    script: 'current'
+}, {
+    html: 'space',
+    script: 'space'
+}, {
+    html: 'location',
+    script: 'location'
+}, {
+    html: 'exhibitions',
+    script: 'exhibitions'
+}, {
+    html: 'upcoming',
+    script: 'upcoming'
+}, {
+    html: 'artist',
+    script: 'artist'
+}, {
+    html: 'press',
+    script: 'press'
+}, {
+    html: 'contact',
+    script: 'contact'
+}, {
+    html: 'notice',
+    script: 'notice'
 }, {
     html: 'sub',
     script: 'sub'

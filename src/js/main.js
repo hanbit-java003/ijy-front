@@ -2,6 +2,14 @@ require('bootstrap');
 require('../less/main.less');
 require('./common');
 
+var carousel = require('./main-carousel');
+
+function init (carouselElment, _slides, _createSlideElemnet, options) {
+    
+}
+
+/*
+
 var contents = require('./model/main/main-contents.js');
 var template = require('../template/img-contents.hbs');
 
@@ -39,4 +47,4 @@ $('.btn-slide').on('click', function () {
 
     $('.main-contents > li').removeClass('active');
     $($('.main-contents > li')[nextIndex]).addClass('active');
-});
+});*/

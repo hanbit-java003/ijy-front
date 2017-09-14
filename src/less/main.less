@@ -1,9 +1,11 @@
 @import 'common.less';
+@import 'main-carousel';
 
 .main-container {
   position: relative;
   margin-top: @header-height;
   height: 750px;
+  width: 100%;
 }
 
 .btn-slide {
@@ -44,7 +46,15 @@
   right: 100px;
 }
 
-.main-contents {
+.main-photos .main-contents {
+  height: 1000px;
+}
+
+.main-photos .main-contents > li {
+  height: 1000px;
+}
+
+/*.main-contents {
   text-align: center;
   cursor: pointer;
 }
@@ -55,12 +65,11 @@
 
 .main-contents > li.active {
   display: block;
-}
+}*/
 
-.main-contents > li > img {
+/*.main-contents > li > img {
   height: 40%;
-}
-
+}*/
 
 .main-text {
   margin: 100px 0;
