@@ -1,57 +1,10 @@
 @import 'common.less';
-@import 'main-carousel';
+@import 'main-carousel.less';
 
 .main-container {
   position: relative;
   margin-top: @header-height;
   height: 750px;
-  width: 100%;
-}
-
-.btn-slide {
-  position: absolute;
-  display: none;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 60px;
-  width: 60px;
-  background-color: #999999;
-  text-align: center;
-  line-height: 70px;
-  cursor: pointer;
-}
-
-.main-container:hover {
-
-  .btn-slide {
-    display: block;
-  }
-
-  .btn-slide:hover {
-    background-color: #777777;
-  }
-}
-
-.btn-slide .fa {
-  display: inline-block;
-  font-size: 35px;
-  color: #ffffff;
-}
-
-.btn-slide-left {
-  left: 100px;
-}
-
-.btn-slide-right {
-  right: 100px;
-}
-
-.main-photos .main-contents {
-  height: 1000px;
-}
-
-.main-photos .main-contents > li {
-  height: 1000px;
 }
 
 /*.main-contents {
@@ -65,9 +18,9 @@
 
 .main-contents > li.active {
   display: block;
-}*/
+}
 
-/*.main-contents > li > img {
+.main-contents > li > img {
   height: 40%;
 }*/
 

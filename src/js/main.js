@@ -4,9 +4,6 @@ require('./common');
 
 var carousel = require('./main-carousel');
 
-function init (carouselElment, _slides, _createSlideElemnet, options) {
-    
-}
 
 /*
 

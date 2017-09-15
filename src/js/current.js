@@ -24,14 +24,14 @@ $('.btn-slide').on('click', function () {
     var index = $('.exhibition-contents > li.active').index();
     var nextIndex = index;
 
-    if ($(this).hasClass('btn-slide-left')) {
+    if ($(this).hasClass('left')) {
         nextIndex = index - 1;
 
         if (nextIndex < 0) {
             nextIndex = count - 1;
         }
     }
-    else if ($(this).hasClass('btn-slide-right')) {
+    else if ($(this).hasClass('right')) {
         nextIndex = index + 1;
 
         if (nextIndex >= count) {

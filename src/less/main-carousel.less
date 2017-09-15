@@ -1,0 +1,57 @@
+.main-photos {
+  width: 900px;
+  height: 100%;
+  margin: 300px auto;
+}
+
+.main-carousel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-carousel > li {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.btn-slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60px;
+  width: 60px;
+  background-color: #999999;
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+}
+
+.main-container:hover {
+
+  .btn-slide {
+    display: block;
+  }
+
+  .btn-slide:hover {
+    background-color: #777777;
+  }
+}
+
+.btn-slide .fa {
+  display: inline-block;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.btn-slide.left {
+  left: 100px;
+}
+
+.btn-slide.right {
+  right: 100px;
+}
