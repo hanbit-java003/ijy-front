@@ -60,7 +60,7 @@ function slide(dirt) {
     carousel.find('li').animate({
         left: animationLeft
     }, {
-        duration: 400,
+        duration: 700,
         complete: function () {
             currentEmt.remove();
             animating = false;
@@ -71,7 +71,7 @@ function slide(dirt) {
 
             timer = setTimeout(function () {
                 slide('left')
-            }, 2000);
+            }, 4000);
         }
     });
 }
